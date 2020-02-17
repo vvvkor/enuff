@@ -1,0 +1,44 @@
+{
+  "name": "enuff",
+  "version": "0.0.1",
+  "description": "Very basic CSS typography and components",
+  "main": "dist/enuff.css",
+  "directories": {
+    "doc": "."
+  },
+  "scripts": {
+    "build:css": "postcss src/enuff.css -o dist/enuff.css",
+    "minify:css": "postcss dist/enuff.css -u cssnano -o dist/enuff.min.css --no-map",
+    "build:version": "cross-var replace-in-file \"/0\\.0\\.0/g\" \"$npm_package_version\" \"dist/*.*\" --isRegex",
+    "build": "npm run build:css && npm run minify:css && npm run build:version",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvvkor/enuff.git"
+  },
+  "keywords": [
+    "basic",
+    "css",
+    "typography",
+    "components",
+    "lightweight"
+  ],
+  "author": "Vadim Korolev <vadimkor@yandex.ru> (https://github.com/vvvkor)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vvvkor/enuff/issues"
+  },
+  "homepage": "https://github.com/vvvkor/enuff#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "perfectionist": "^2.4.0",
+    "postcss-calc": "^7.0.1",
+    "postcss-cli": "^7.1.0",
+    "postcss-custom-properties": "^8.0.11",
+    "postcss-discard-comments": "^2.0.4",
+    "cross-var": "^1.1.0",
+    "replace-in-file": "^3.4.4"
+  }
+}
