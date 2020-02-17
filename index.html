@@ -18,6 +18,10 @@
 		<i class="text-i hide-desktop">Showing mobile styles</i>
 		</p>
 		
+		<!--div class="mar">
+			<small class="text-n"><time datetime="2020-02-17T18:00">2020-02-17 18:00</time></small>
+			<h2 class="fit">Typography</h2>
+		</div-->
 		<h2>Typography</h2>
 		Text
 		<i>Italic</i>
@@ -65,13 +69,13 @@
 			<table class="">
 				<caption>Table caption</caption>
 				<thead class="bg">
-					<tr><th>A<th class="c">B<th class="r">C
+					<tr><th>Column<th class="c">Header<th class="r">Value
 				</thead>
 				<tbody>
 					<tr><td>1<td class="c">z<td class="r">0
 					<tr><td>2<td class="c">yy<td class="r bg-i">10
-					<tr><td>3<td class="c">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<td class="r bg-e">100
-					<tr class="bg-i"><td>4<td class="c">w<td class="r">1000
+					<tr><td>3<td class="c">xxx<td class="r bg-e">100
+					<tr class="bg-i"><td>4<td class="c">overflowwwwwwwwwwwwwwwwwwwwwwwwwwww!<td class="r">1000
 				</tbody>
 				<tfoot class="bg">
 					<tr><td>Total<td>3<td>1110
@@ -129,22 +133,26 @@
 		</div>
 		
 		<h2>Form</h2>
-		<input type="text" name="nm" size="3">
-		<span>
-			<input type="search" name="mail" required size="3">
-			<small class="text-y">ok</small>
-			<small class="text-e">wrong</small>
-		</span>
-		<input type="text" name="dis" readonly size="3">
+		<p>
 		<button>Button</button>
-		<button disabled>Disabled</button>
-		<input type="submit" value="Submit">
-		<br>
 		<button class="bg-e">Danger</button>
 		<button class="bg-w">Warning</button>
 		<button class="bg-y">Success</button>
 		<button class="bg-i">Info</button>
 		<button class="bg-n">Lite</button>
+		</p>
+		<form class="bg mar pad">
+			<input type="text" name="nm" size="3">
+			<span>
+				<input type="search" name="mail" required size="3">
+				<small class="text-y">ok</small>
+				<small class="text-e">wrong</small>
+			</span>
+			<input type="text" name="dis" readonly size="3">
+			<button>Button</button>
+			<button disabled>Disabled</button>
+			<input type="submit" value="Submit">
+		</form>
 		<form class="bg mar pad">
 			<p>
 			<label for="nm">Name</label><br>
@@ -178,9 +186,9 @@
 			</div>
 		</form>
 
-		<h2>Toggle</h2>
+		<h2>Components</h2>
 		
-		<h3>Nav</h3>
+		<h3>Navigation</h3>
 		<ul class="nav row let -flip">
 			<li><a href="#x">Alpha</a>
 				<ul>
@@ -197,8 +205,8 @@
 		
 		<h3>Target</h3>
 		<div class="mar"><a href="#trg">Show target</a> <div id="trg" class="bg-n pad target">Target</div></div>
-		<div class="mar"><a href="#mob" class="hide-desktop">Show mobile target</a> <div id="mob" class="bg-n pad target-mobile hide-desktop">Mobile target</div></div>
-		<div class="mar"><a href="#desk" class="hide-mobile">Show desktop target</a> <div id="desk" class="bg-i pad target-desktop hide-mobile">Desktop target</div></div>
+		<div class="mar"><a href="#mob" class="hide-desktop">&equiv;</a> <div id="mob" class="bg-n pad target-mobile">Show on desktop, toggle on mobile</div></div>
+		<!--div class="mar"><a href="#desk" class="hide-mobile">Show desktop target</a> <div id="desk" class="bg-i pad target-desktop hide-mobile">Desktop target</div></div-->
 		
 		<h3>Popup</h3>
 		The <div class="pop">popup <a href="#pop">&darr;</a><div id="pop" class="pad">Pop</div></div> component.
