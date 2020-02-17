@@ -5,7 +5,7 @@ Very basic CSS typography and components.
 
 ## Get started
 
-Download and add the [distributed](https://github.com/vvvkor/defram/archive/master.zip) CSS to the head of your document.
+Download and add the [distributed](https://github.com/vvvkor/enuff/archive/master.zip) CSS to the head of your document.
 
 ```html
 <link rel="stylesheet" href="/css/enuff.css">
