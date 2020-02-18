@@ -7,30 +7,60 @@
     <link rel="stylesheet" href="dist/enuff.min.css">
   </head>
   <body class="pad">
+	<div class="row">
+		<div>
+			<a href="index.html" class="fit">enuff.css</a>
+		</div>
+		<div class="col-0">
+			<ul class="nav row let">
+				<li><a href="#x">Elements</a>
+					<ul id="nav-elements">
+					<li><a href="#typography">Typography</a>
+					<li><a href="#blocks">Blocks</a>
+					<li><a href="#table">Table</a>
+					<li><a href="#lists">Lists</a>
+					<li><a href="#grid">Grid</a>
+					<li><a href="#forms">Forms</a>
+					</ul>
+				<li><a href="#x">Components</a>
+					<ul id="nav-components">
+					<li><a href="#navigation">Navigation</a>
+					<li><a href="#target">Target</a>
+					<li><a href="#popup">Popup</a>
+					<li><a href="#modal">Modal</a>
+					</ul>
+				<li><a href="https://github.com/vvvkor/enuff/archive/master.zip">Download</a>
+				<li><a href="https://github.com/vvvkor/enuff">GitHub</a>
+			</ul>
+		</div>
+	</div>
 	<main class="wrap center">
-		<h1>
+	
+	
+		<h1 class="c">
 			enuff.css
 			<!--small class="text-n">v0.0.0</small-->
-			&mdash; <a href="https://github.com/vvvkor/enuff">GitHub</a>
 		</h1>
-		<p>
+		<p class="c">
+		<i>Basic CSS typography and components</i>
+		<p class="c">
 		<i class="text-n hide-mobile">Showing desktop styles</i>
-		<i class="text-i hide-desktop">Showing mobile styles</i>
+		<i class="text-n hide-desktop">Showing mobile styles</i>
 		</p>
 		
 		<!--div class="mar">
 			<small class="text-n"><time datetime="2020-02-17T18:00">2020-02-17 18:00</time></small>
 			<h2 class="fit">Typography</h2>
 		</div-->
-		<h2>Typography</h2>
+		<h2 id="typography">Typography</h2>
 		Text
 		<i>Italic</i>
 		<b>Bold</b>
-		<mark>Mark</mark>
 		<code>Code</code>
-		<a href="#x">Link</a>
-		<a href="#">Visited</a>
 		<a>No link</a>
+		<a href="#x">Link</a>
+		<a href="index.html">Visited</a>
+		<mark>Mark</mark>
 		<abbr title="Title">Abbr</abbr>
 		<span class="text-e">Error</span>
 		<span class="text-w">Warning</span>
@@ -41,7 +71,7 @@
 		<span class="text-n"><svg viewBox="0 0 100 100" width="24" height="24" class="icon"><path d="M10 48l11-9 18 22 40-50 11 9-51 65z"></path></svg> Icon</span>
 		<svg viewBox="0 0 100 100" width="24" height="24" class="icon text-i"><path d="M10 48l11-9 18 22 40-50 11 9-51 65z"></path></svg>
 		
-		<h2>Blocks</h2>
+		<h2 id="blocks">Blocks</h2>
 		<div class="row">
 		<div>
 		<p>Paragraph</p>
@@ -64,7 +94,7 @@
 		</div>
 		</div>
 		
-		<h2>Table</h2>
+		<h2 id="table">Table</h2>
 		<div class="roll">
 			<table class="">
 				<caption>Table caption</caption>
@@ -78,13 +108,13 @@
 					<tr class="bg-i"><td>4<td class="c">overflowwwwwwwwwwwwwwwwwwwwwwwwwwww!<td class="r">1000
 				</tbody>
 				<tfoot class="bg">
-					<tr><td>Total<td>3<td>1110
+					<tr><td>Total<td class="c">3<td class="r">1110
 				</tfoot>
 			</table>
 		</div>
 		
-		<h2>List</h2>
-		<div class="row flip">
+		<h2 id="lists">Lists</h2>
+		<div class="row">
 		<ul>
 			<li>Alpha
 				<ul>
@@ -112,48 +142,51 @@
 		</dl>
 		</div>
 		
-		<h2>Grid</h2>
-		<div class="row">
+		<h2 id="grid">Grid</h2>
+		<div class="row -fit">
 			<div class="bg pad col-0">0</div>
 			<div class="bg pad"      >1</div>
 			<div class="bg pad col-2">2</div>
 			<div class="bg pad col-3">3</div>
 		</div>
 		<div class="row flip mar">
-			<div class="bg-i pad col-0">Flip 00000000000000000</div>
-			<div class="bg-i pad"      >Flip 11111111111111111</div>
-			<div class="bg-i pad col-2">Flip 22222222222222222</div>
-			<div class="bg-i pad col-3">Flip 33333333333333333</div>
+			<div class="bg-i pad col-0">Flip A</div>
+			<div class="bg-i pad"      >Flip B</div>
+			<div class="bg-i pad col-2">Flip C</div>
+			<div class="bg-i pad col-3">Flip D</div>
 		</div>
 		<div class="row let mar">
-			<div class="bg-w pad col-0">Wrap 000000000000</div>
-			<div class="bg-w pad"      >Wrap 111111111111</div>
-			<div class="bg-w pad col-2">Wrap 222222222222</div>
-			<div class="bg-w pad col-3">Wrap 333333333333</div>
+			<div class="bg-w pad col-0">Wrap 00000000000000</div>
+			<div class="bg-w pad"      >Wrap 11111111111111</div>
+			<div class="bg-w pad col-2">Wrap 22222222222222</div>
+			<div class="bg-w pad col-3">Wrap 33333333333333</div>
 		</div>
 		
-		<h2>Form</h2>
+		<h2 id="forms">Forms</h2>
 		<p>
 		<button>Button</button>
-		<button class="bg-e">Danger</button>
-		<button class="bg-w">Warning</button>
-		<button class="bg-y">Success</button>
+		<button class="bg-e">Err</button>
+		<button class="bg-w">Warn</button>
+		<button class="bg-y">OK</button>
 		<button class="bg-i">Info</button>
 		<button class="bg-n">Lite</button>
 		</p>
-		<form class="bg mar pad">
+		<form class="bord mar pad">
+			<p>
 			<input type="text" name="nm" size="3">
 			<span>
 				<input type="search" name="mail" required size="3">
 				<small class="text-y">ok</small>
 				<small class="text-e">wrong</small>
 			</span>
-			<input type="text" name="dis" readonly size="3">
 			<button>Button</button>
+			<p>
+			<input type="text" name="dis" readonly size="3">
 			<button disabled>Disabled</button>
 			<input type="submit" value="Submit">
+			</p>
 		</form>
-		<form class="bg mar pad">
+		<form class="shade mar pad">
 			<p>
 			<label for="nm">Name</label><br>
 			<input type="text" name="nm" id="nm">
@@ -168,6 +201,17 @@
 			<div class="row flip">
 				<label for="nm2">Name</label>
 				<div><input type="text" name="nm2" id="nm2"></div>
+			</div>
+			<div class="row flip">
+				<label for="sel">Select</label>
+				<div>
+					<select name="sel" id="sel">
+						<option value="0" selected>-</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+				</div>
 			</div>
 			<fieldset>
 				<legend>Fieldset</legend>
@@ -186,10 +230,10 @@
 			</div>
 		</form>
 
-		<h2>Components</h2>
+		<h2 id="components">Components</h2>
 		
-		<h3>Navigation</h3>
-		<ul class="nav row let -flip">
+		<h3 id="navigation">Navigation</h3>
+		<ul class="nav row let flip fit -bg">
 			<li><a href="#x">Alpha</a>
 				<ul>
 					<li><a href="#x">One</a>
@@ -201,24 +245,32 @@
 				</ul>
 			<li><a href="#x">Beta</a>
 			<li><a href="#x">Gamma</a>
+			<li><form><input type="search" name="q" size="5"> <input type="submit" value="Search"></form>
 		</ul>
 		
-		<h3>Target</h3>
+		<h3 id="target">Target</h3>
 		<div class="mar"><a href="#trg">Show target</a> <div id="trg" class="bg-n pad target">Target</div></div>
-		<div class="mar"><a href="#mob" class="hide-desktop">&equiv;</a> <div id="mob" class="bg-n pad target-mobile">Show on desktop, toggle on mobile</div></div>
+		<div class="mar"><a href="#mob" class="hide-desktop">&equiv;</a> <div id="mob" class="bg-i pad target-mobile">Show on desktop, toggle on mobile</div></div>
 		<!--div class="mar"><a href="#desk" class="hide-mobile">Show desktop target</a> <div id="desk" class="bg-i pad target-desktop hide-mobile">Desktop target</div></div-->
 		
-		<h3>Popup</h3>
-		The <div class="pop">popup <a href="#pop">&darr;</a><div id="pop" class="pad">Pop</div></div> component.
+		<h3 id="popup">Popup</h3>
+		Open <div class="pop"><a href="#x">popup</a> <a href="#pop">&darr;</a><div id="pop" class="pad">Popup</div></div> block.
 		
-		<h3>Dialog</h3>
-		<a href="#modal">Open</a>
-		<div class="dlg pad" id="modal">
-			<a class="pad close" href="#x">&times;</a>
-			<p class="c">Dialog</p>
-			<form action="#x" class="mar c"><input type="submit" value="OK"></form>
+		<h3 id="modal">Modal</h3>
+		<a href="#dlg">Open modal dialog</a>
+		<div class="dlg pad" id="dlg">
+			<div class="r"><a class="fit pad" href="#x">&#x2715;</a></div>
+			<p class="c">Modal dialog</p>
+			<form action="#x" class="pad mar c">
+				<input type="submit" value="Submit">
+				<a class="btn bg-y" href="#x">Link</a>
+				Text
+			</form>
 		</div>
+		<hr>
 	</main>
+		
+	<p class="c"><a href="#">&uarr; Top</a></p>
 	<a href="#x" accesskey="x" class="hide"></a>
   </body>
 </html>
