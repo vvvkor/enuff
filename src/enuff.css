@@ -111,6 +111,7 @@ button::-moz-focus-inner, [type="submit"]::-moz-focus-inner{border:none;}
 body{font:120%/1.5 var(--font);background-color:var(--bg);color:var(--text);}
 pre, code{font-family:var(--font-mono);white-space:pre-wrap;}
 pre{overflow:auto;max-height:80vh;}
+pre code{color:inherit;}
 blockquote{border-left:var(--gap-s) solid var(--bg-pane);padding-left:var(--gap-n);}
 blockquote,caption,figcaption{font-style:italic;}
 hr,fieldset{border:var(--border);}
