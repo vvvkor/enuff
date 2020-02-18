@@ -1,7 +1,7 @@
 {
   "name": "enuff",
   "version": "0.0.3",
-  "description": "Very basic CSS typography and components",
+  "description": "Basic CSS typography and components",
   "main": "dist/enuff.css",
   "directories": {
     "doc": "."

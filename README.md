@@ -1,6 +1,6 @@
 # enuff
 
-Very basic CSS typography and components.  
+Basic CSS typography and components.  
 [Demo](https://vvvkor.github.io/enuff/)
 
 ## Get started
