@@ -33,6 +33,7 @@
 				<li><a href="https://github.com/vvvkor/enuff/archive/master.zip">Download</a>
 				<li><a href="https://github.com/vvvkor/enuff">GitHub</a>
 			</ul>
+			<!--div class="bg">div</div-->
 		</div>
 	</div>
 	<main class="wrap center">
@@ -54,6 +55,7 @@
 			<h2 class="fit">Typography</h2>
 		</div-->
 		<h2 id="typography">Typography</h2>
+		<pre><code>.text-e, text-w, .text-y, .text-i, .text-n, a.fit, .icon</code></pre>
 		Text
 		<i>Italic</i>
 		<b>Bold</b>
@@ -61,6 +63,7 @@
 		<a>No link</a>
 		<a href="#x">Link</a>
 		<a href="index.html">Visited</a>
+		<a href="#x" class="fit">Link</a>
 		<mark>Mark</mark>
 		<abbr title="Title">Abbr</abbr>
 		<span class="text-e">Error</span>
@@ -73,6 +76,7 @@
 		<svg viewBox="0 0 100 100" width="24" height="24" class="icon text-i"><path d="M10 48l11-9 18 22 40-50 11 9-51 65z"></path></svg>
 		
 		<h2 id="blocks">Blocks</h2>
+		<pre><code>.bg-e, bg-w, .bg-y, .bg-i, .bg-n,<br>.fit, .bg, .pad, .bord, .shade, .mar,<br>.wrap, .l, .r, .c, .center,<br>.hide, .hide-print, .hide-mobile, .hide-desktop</code></pre>
 		<div class="row">
 		<div>
 		<p>Paragraph</p>
@@ -96,8 +100,9 @@
 		</div>
 		
 		<h2 id="table">Table</h2>
+		<pre><code><span class="text-n">.roll</span> table<span class="text-n">.fit.bord.pad</span></code></pre>
 		<div class="roll">
-			<table class="">
+			<table class="-fit -bord -pad">
 				<caption>Table caption</caption>
 				<thead class="bg">
 					<tr><th>Column<th class="c">Header<th class="r">Value
@@ -115,6 +120,7 @@
 		</div>
 		
 		<h2 id="lists">Lists</h2>
+		<pre><code>ul<span class="text-n">.fit</span>, ol, dl</code></pre>
 		<div class="row">
 		<ul class="-fit">
 			<li>Alpha
@@ -144,6 +150,7 @@
 		</div>
 		
 		<h2 id="grid">Grid</h2>
+		<pre><code>.row<span class="text-n">.flip.let.mar.fit</span> &gt; :is(*, .col-0, .col-2, .col-3)</code></pre>
 		<div class="row -fit">
 			<div class="bg pad col-0">0</div>
 			<div class="bg pad"      >1</div>
@@ -164,6 +171,7 @@
 		</div>
 		
 		<h2 id="forms">Forms</h2>
+		<pre><code>button, [type="submit"], .btn</code></pre>
 		<p>
 		<button>Button</button>
 		<button class="bg-e">Error</button>
@@ -172,6 +180,8 @@
 		<button class="bg-i">Info</button>
 		<button class="bg-n">Lite</button>
 		</p>
+		
+		<pre><code>form &gt; input ~ button</code></pre>
 		<form class="bord mar pad">
 			<p>
 			<input type="text" name="nm" size="3">
@@ -181,12 +191,16 @@
 				<small class="text-e">wrong</small>
 			</span>
 			<button>Button</button>
+			<a href="#x">Link</a>
 			<p>
 			<input type="text" name="dis" readonly size="3">
 			<button disabled>Disabled</button>
 			<input type="submit" value="Submit">
+			<a class="btn" href="#x">Link</a>
 			</p>
 		</form>
+		
+		<pre><code>form &gt; p &gt; label + br + input</code></pre>
 		<form class="shade mar pad">
 			<p>
 			<label for="nm">Name</label><br>
@@ -197,7 +211,8 @@
 			<p>
 			<input type="submit" value="Submit">
 		</form>
-
+		
+		<pre><code>form &gt; div.row<span class="text-n">.flip</span> &gt; label + div &gt; input</code></pre>
 		<form class="bg mar pad">
 			<div class="row flip">
 				<label for="nm2">Name</label>
@@ -234,6 +249,7 @@
 		<h2 id="components">Components</h2>
 		
 		<h3 id="navigation">Navigation</h3>
+		<pre><code>ul.nav<span class="text-n">.row.flip.let.fit</span></code></pre>
 		<ul class="nav row let flip fit -bg">
 			<li><a href="#x">Alpha</a>
 				<ul>
@@ -250,14 +266,17 @@
 		</ul>
 		
 		<h3 id="target">Target</h3>
+		<pre><code>a[href="#id"]; .target[id]<br>a[href="#id"].hide-desktop; .target-mobile[id]<br>a[href="#id"].hide-mobile; .target-desktop[id]</code></pre>
 		<div class="mar"><a href="#trg">Show target</a> <div id="trg" class="bg-n pad target">Target</div></div>
 		<div class="mar"><a href="#mob" class="hide-desktop">&equiv;</a> <div id="mob" class="bg-i pad target-mobile">Show on desktop, toggle on mobile</div></div>
 		<!--div class="mar"><a href="#desk" class="hide-mobile">Show desktop target</a> <div id="desk" class="bg-i pad target-desktop hide-mobile">Desktop target</div></div-->
 		
 		<h3 id="popup">Popup</h3>
+		<pre><code>.pop &gt; * ~ div<br>.pop &gt; a[href="#id"] ~ div[id]</code></pre>
 		Open <div class="pop"><a href="#x">popup</a> <a href="#pop">&darr;</a><div id="pop" class="pad">Popup</div></div> block.
 		
 		<h3 id="modal">Modal</h3>
+		<pre><code>a[href="#id"]; .dlg[id]</code></pre>
 		<a href="#dlg">Open modal dialog</a>
 		<div class="dlg pad" id="dlg">
 			<div class="r"><a class="fit pad" href="#x">&#x2715;</a></div>
