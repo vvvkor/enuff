@@ -182,8 +182,12 @@ button,[type="submit"],.btn{padding:var(--gaps-s);border-color:transparent;borde
 	.nav>li{flex:0 1 auto;}
 	.nav li{list-style:none;}
 	.nav ul{padding:/*var(--gap-s)*/ 0;}
-	.nav>li>ul{left:2em;}
-	.nav ul ul{left:100%;top:0;}
+	.nav ul{left:2em;}
+		/* 3+ level to the right */
+		/*
+		.nav>li>ul{left:2em;}
+		.nav ul ul{left:100%;top:0;}
+		*/
 	.nav li>*{display:inline-block;}
 	.nav ul a, .nav.fit a{display:block;padding:var(--gaps-n);/*color:inherit;*/}
 	.nav ul li:hover>a, .nav.fit li:hover>a{background:var(--bg-pane);}
