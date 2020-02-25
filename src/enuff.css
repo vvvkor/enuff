@@ -126,10 +126,10 @@ a.fit{color:inherit;}
 
 /* table */
 table{box-sizing:border-box;}
-th,td{border-bottom:var(--border);padding:var(--gaps-s);vertical-align:top;background-clip:padding-box;}
-table :last-child tr:last-child>*{border-bottom:none;}
-/*table.fit tr>*{padding:0;}*/
+th,td{padding:var(--gaps-s);vertical-align:top;background-clip:padding-box;}
 table tr:hover>*{background-color:var(--bg-pane);}
+	table.let>*>tr>*{border-bottom:var(--border);}
+	table.let>:last-child>tr:last-child>*{border-bottom:none;}
 
 /* list */
 ul{list-style-type:disc;}
